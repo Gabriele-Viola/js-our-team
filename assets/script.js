@@ -59,4 +59,33 @@ for (let i = 0; i < teamMembers.length; i++) {
   </div>`
   }
 
+  const formEl = document.querySelector('form')
+
+  formEl.addEventListener('submit', (e)=>{
+    e.preventDefault()
+    let role = document.getElementById('role').value
+    console.log(role);
+    let name = document.getElementById('Name').value
+    console.log(name);
+    let email = document.getElementById('email').value
+    console.log(email);
+    let img = document.getElementById('img').value
+    console.log(img);
+
+    rowEl.innerHTML += `                <div class="col">
+  <div class="d-flex gap-3 my-2 bg-dark co">
+  <img class="col-4" src="./assets/${img}" alt="">
+  <div class="col-7 text-light">
+  <h3 class="text-light">${name}</h3>
+  <p>${role}</p>
+  <p class="text-primary">${email}</p>
+  </div>
+  </div>
+  </div>`
+    
+  })
+
+  console.log(formEl);
+  
+  
 
