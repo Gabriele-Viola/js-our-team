@@ -48,10 +48,10 @@ for (let i = 0; i < teamMembers.length; i++) {
   
   
   rowEl.innerHTML += `                <div class="col">
-  <div class="d-flex gap-3 my-2 bg-dark co">
+  <div class="d-flex my-2 bg-dark co">
   <img class="col-4" src="./assets/${img}" alt="">
-  <div class="col-7 text-light">
-  <h3 class="text-light">${name}</h3>
+  <div class="col-7 text-light m-2">
+  <h4 class="text-light">${name}</h4>
   <p>${role}</p>
   <p class="text-primary">${email}</p>
   </div>
@@ -73,7 +73,7 @@ for (let i = 0; i < teamMembers.length; i++) {
     console.log(img);
 
     rowEl.innerHTML += `                <div class="col">
-  <div class="d-flex gap-3 my-2 bg-dark co">
+  <div class="d-flex my-2 bg-dark co">
   <img class="col-4" src="${img}" alt="">
   <div class="col-7 text-light">
   <h3 class="text-light">${name}</h3>
