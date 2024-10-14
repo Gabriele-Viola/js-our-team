@@ -63,26 +63,30 @@ for (let i = 0; i < teamMembers.length; i++) {
 
   formEl.addEventListener('submit', (e)=>{
     e.preventDefault()
-    let role = document.getElementById('role').value
+    let role = document.getElementById('role')
     console.log(role);
-    let name = document.getElementById('Name').value
+    let name = document.getElementById('Name')
     console.log(name);
-    let email = document.getElementById('email').value
+    let email = document.getElementById('email')
     console.log(email);
-    let img = document.getElementById('img').value
+    let img = document.getElementById('img')
     console.log(img);
 
     rowEl.innerHTML += `                <div class="col">
   <div class="d-flex my-2 bg-dark co">
-  <img class="col-4" src="${img}" alt="">
-  <div class="col-7 text-light">
-  <h3 class="text-light">${name}</h3>
-  <p>${role}</p>
-  <p class="text-primary">${email}</p>
+  <img class="col-4" src="${img.value}" alt="">
+  <div class="col-7 text-light m-2">
+  <h4 class="text-light">${name.value}</h4>
+  <p>${role.value}</p>
+  <p class="text-primary">${email.value}</p>
   </div>
   </div>
   </div>`
     
+  name.value = ''
+  role.value = ''
+  email.value = ''
+  img.value = ''
   })
 
 
