@@ -74,7 +74,7 @@ for (let i = 0; i < teamMembers.length; i++) {
 
     rowEl.innerHTML += `                <div class="col">
   <div class="d-flex gap-3 my-2 bg-dark co">
-  <img class="col-4" src="./assets/${img}" alt="">
+  <img class="col-4" src="${img}" alt="">
   <div class="col-7 text-light">
   <h3 class="text-light">${name}</h3>
   <p>${role}</p>
